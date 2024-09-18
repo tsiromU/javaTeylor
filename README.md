@@ -1,0 +1,2 @@
+# javaTeylor
+myFirstJavaProject
