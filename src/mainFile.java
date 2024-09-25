@@ -22,7 +22,8 @@ class mainFile {
         
         double x, eps;
         System.out.println("vvodite:");
-        Scanner scan = new Scanner(System.in);
+        try{
+            Scanner scan = new Scanner(System.in);
         x = scan.nextDouble();
         eps = scan.nextDouble();
         if(x < 2 && x>0){
@@ -31,11 +32,12 @@ class mainFile {
             System.out.println(ans);
             System.out.println("right answer:");
             System.out.println(Math.log(x+1));
+            scan.close();
         }else{
             System.out.println("vihod is ranga");
         }  
-
-        
-        scan.close();
+        }catch(Exception e){
+            System.out.println("The 'try catch' is finished.");
+        }
     }
 }
